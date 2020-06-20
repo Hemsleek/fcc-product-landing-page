@@ -1,9 +1,169 @@
 html , body{
     margin:0;
     padding: 0;
+    font-family: 'Lato', sans-serif; 
+    font-size:16px;
 
 }
 
 *{
     box-sizing: border-box;
+}
+
+/* HELPER STYLES START
+=====================
+*/
+.flex{
+    display: flex;
+}
+.flex.align-center{
+    align-items: center;
+}
+.flex.justify-between{
+    justify-content: space-between;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex.justify-center{
+    justify-content: center;
+}
+.flex-grow{
+    flex-grow: .25;
+}
+.flex.flex-end{
+
+    align-items:flex-end;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-column{
+    grid-template-columns:245.33px 245.33px 245.33px;
+    grid-column-gap:50px;
+}
+
+/* HELPER STYLES END
+=====================
+*/
+body{
+    background-color: #EEE;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+#header{
+    position:fixed;
+    width:100vw;
+    top:0;
+    background-color: #EEE;
+    font-weight:400;
+    font-size:1rem;
+    height:64px;
+    padding:2.5rem;
+    z-index: 5;
+}
+#header-img{
+   max-width:300px;
+   width:100%;
+   height:auto;
+
+}
+.nav-link{
+    margin-right: .5rem;
+}
+.info{
+    margin-top:90px;
+    text-align: center;
+}
+.info h2{
+    font-size:1.5rem ;
+    font-weight: 700;
+
+}
+#email{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .83rem;
+    font-weight:400 ;
+    width:275px;
+    padding:.32rem;
+}
+#submit{
+    width: 150px;
+    height: 30px;
+    margin:.94rem 0;
+    background-color: #F1C40F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+
+}
+#submit:hover{
+    background-color:#ffa500 ;
+     /* #E6BB0E; */
+}
+#features{
+    margin:auto;
+    width: fit-content;
+}
+.flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-item h2, .flex-item p{
+    margin:0;
+}
+.text{
+    flex-grow:1;
+}
+#video{
+    display: block;
+    margin:3.125rem auto 0;
+}
+#pricing{
+    margin:3.75rem auto 0;
+    width: fit-content;
+}
+.item{
+ background-color: #EEEEEE;
+ border:1px black solid;
+ height: 311px;
+ text-align: center;
+}
+.head{
+    background-color: #DDD;
+    padding: 0.95rem;
+}
+h3{
+    margin-top: .94rem;
+}
+button{
+    margin-top: 1rem;
+    text-align: center;
+    width:6.39rem;
+    height:2.3rem;
+}
+footer{
+
+    display: block;
+    margin:2.5rem auto 0;
+    width:62.5vw;
+    background-color: #DDDDDD;
+    padding:1.25rem;
+    font-weight:400;
+    font-size:1rem;
+}
+
+.footer-links > a{
+    margin-right: .7rem;
+}
+.copyright{
+    color:#444;
+    font-weight: 400;
+    font-size: .9rem;
+    margin-top:.31rem;
 }

@@ -4,11 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
+    <header id="header" class="flex align-center justify-between">
+        <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="brand-logo" id="header-img">
+        <nav id="nav-bar" class="flex align-center justify-between flex-grow">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#video" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+    </header>
+    <main>
+        <div class="info">
+
+            <h2>Quality Services,something sweet and nice for everyone</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" > <br>
+                <input type="submit" id="submit" value="GET STARTED" >
+            </form>    
+        </div>
+
+        <div id="features" class="flex flex-col justify-between">
+            <div class="flex-item">
+                <img src="./media/drop.svg" alt="materials" class="mb-icon">
+                <div class="premium-materials text">
+                    <h2>Premium Packages</h2>
+                    <p>Our packages are of high quality materials and standard baking processes and methods,your satisfaction is guaranteed. </p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="./media/truck.svg" alt="car" class="car">
+                <div class="delivery text">
+                    <h2>Fast Delivery & Takeout</h2>
+                    <p>We make sure your order(s) is ready to be delivered on the date specified.We also help deliver suprise packages.</p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <img src="./media/battery.svg" alt="battery" class="battery">
+                <div class="nutrition text">
+                    <h2>Assured Nutrition & Quality</h2>
+                    <p>For every order you make,we will ensure it's well packaged and no damages or fault with high nutrition value assured. </p>
+                </div>
+            </div>
+        </div>
+        
+        <video id="video" width="560px" height="315" controls>
+            <source src="#" type="video/mp4">
+        </video>
+
+        <div id="pricing" class="grid grid-column">
+            <div class="item">
+                <div class="head">FOOD TRAY</div>
+                <h3>$600</h3>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <button>SELECT</button>
+            </div>
+            <div class="item">
+                <div class="head">CAKE</div>
+                <h3>$900</h3>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <button>SELECT</button>
+            </div>
+            <div class="item">
+                <div class="head">FRAME</div>
+                <h3>$1200</h3>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum dolor</p>
+                <button>SELECT</button>
+            </div 
+            </div>
+        </div>
+    </main>
+    <footer class="flex flex-col flex-end">
+        <div class="footer-links flex align-center">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+        <span class="copyright">Copyright &copy;2020, Ainabod Confectionary</span>
+    </footer>
 
 </body>
 </html>
